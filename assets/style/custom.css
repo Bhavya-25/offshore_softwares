@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.new_banner_sec {
+    padding-top: 90px;
+    background: linear-gradient(rgb(35 64 145 / 24%) -13.49%, rgba(71, 178, 126, 0) 81.4%) !important;
+}
+
+.banner_heading{
+    color: #2E3D62;
+    font-size: 34px;
+    line-height: 1.3em;
+    font-weight: 700;
+}
+
+.banner_brief{
+    padding: 5px 0;
+    color: #000;
+    opacity: 0.9;
+    font-size: 18px;
+}
+
+.avatar{
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.avatar_brief{
+    font-size: 16px !important;
+    padding: 5px 15px;
+    text-align: left;
+    font-weight: 500;
+    color: #000;
+    opacity: 0.9;
+    line-height: 1.8;
+}
+
+.book_btn{
+    background-color: #7bc245;
+    border-radius: 10px;
+    padding: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 100%;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #7bc245 inset;
+    border: 1px solid transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.6s !important;
+}
+
+.book_btn:hover{
+    border: 1px solid #7bc245;
+    color: #7bc245;
+    background-color: #fff;
+    box-shadow: unset;
+
+}
+
+.new_btn{
+    max-width: 250px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 0 0;
+    padding-left: 15px;
+}
+
+.avatar_img{
+    border-radius: 70px;
+    height: 120px;
+    max-width: 120px;
+    width: 100%
+    /* object-fit: cover ; */
+}
+
+.avatar-content{
+    background: url("/pffshore_softwares/assets/images/mid.png.png");
+    background-size: 100%;
+    align-items: flex-start;
+    padding: 0 15px;
+    /* background-repeat: no-repeat; */
+}
+
+.new_img{
+    width:100%;
+}

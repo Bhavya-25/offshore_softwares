@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1320px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.paragraph{
+        color: #554d63;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.8;
+}
+
+.our_coustomer_bg {
+    background-color: #F0F6FF;
+    padding: 16px;
+}
+.review_bar ,.our_flex_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.our_flex_img{
+    gap: 5px;
+
+}
+.our_spam_heading{
+    color: #234091;
+}
+.fw-bold {
+    font-weight: 700!important;
+}
+.our_coustomer_heading{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+  
+}
+.our_coustomer_img{
+    line-height: 0px;
+}
+.our--spam-heading{
+    display: inline-flex;
+    align-items: center;
+} 
+/* second section start */
+.we_do_for_you{
+    padding: 48px 0;
+}
+.we_do_heading{
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    text-align: center;
+}
+/* second section end */
+
+
+
+.we--do--span{
+    color: #7bc245;
+    margin-left: 5px;
+}
+.we--do--heading{
+    margin-bottom: 50px;
+    color: #234091;
+}
+.for_you_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+.for_you_card,.service_card{
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 297px;
+    width: 100%;
+    margin: 0 auto;
+}
+.service_card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    transition: .6s !important;
+}
+.icon_block{
+    display: block;
+    max-width: 50px;
+    width: 100%;
+}
+.icon_hover{
+    display: none;
+    max-width: 50px;
+    width: 100%;
+}
+.for_you_card:hover {
+    background-color: #234091;
+}
+.for_you_card:hover .card_sub_heading ,.for_you_card:hover .card_sub_heading2, .for_you_card:hover  .card_sub_p{
+    color: #fff;
+}
+.for_you_card:hover .icon_hover{
+display: block;
+}
+.for_you_card:hover .icon_block{
+    display: none;
+}
+.card_sub_heading{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    margin:30px 0 15px;
+    color: #234091;
+}
+.card_sub_heading2{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #7bc245;
+    max-width: 183px;
+    width: 100%;    
+}
+.card_sub_p{
+    margin-top: 15px;
+}
+.for_you_card::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: -60px;
+    right: -50px;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    opacity: 0.1;
+}
+.for_you_card::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    bottom: -60px;
+    left: -50px;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    opacity: 0.1;
+}
+.sevice--content{
+margin-bottom: 50px;
+}
+.service_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    align-items: center;
+    gap: 20px;
+}
+/* fourth sec start */
+.technology_section{
+    padding: 40px 0;
+}
+.technology_icons{
+    max-width: 170px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d5f3ff ;
+}
+.technology_icons img{
+    margin: 0 auto;
+    display: block;
+}
+.technology_icons_grid{
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+/* fourth sec end*/
+/* media query start */
+@media (max-width:1024px) {
+    .for_you_cards,.service_cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .service_cards,.technology_icons_grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .for_you_card,.service_card{
+        padding: 20px;
+    }
+}
+@media(max-width:768px) {
+    .our_coustomer_heading{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .review_bar{
+        flex-direction: column;
+    }
+    .for_you_cards,.service_cards{
+        grid-template-columns:  1fr;
+    }
+    .technology_icons_grid{
+        grid-template-columns:  1fr 1fr;
+
+    }
+    .for_you_card,.service_card{
+        padding: 15px;
+    }
+    .card_sub_heading2{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .card_sub_p{
+        font-size: 11px;
+        line-height: 18px;
+    } 
+    .we_do_heading{
+        font-size: 26px;
+    }
+}
+/* media query end */

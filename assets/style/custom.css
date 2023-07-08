@@ -25,7 +25,7 @@ button {
 }
 
 .new_banner_sec {
-    padding-top: 90px;
+    /* padding-top: 90px; */
     background: linear-gradient(rgb(35 64 145 / 24%) -13.49%, rgba(71, 178, 126, 0) 81.4%) !important;
 }
 
@@ -348,7 +348,7 @@ button {
 } 
 
 .client_slider .swiper-slide img{
-    width: 100%
+    /* width: 100% */
 }
 
 .client_bg{
@@ -364,6 +364,132 @@ button {
     text-align: left;
 }
 
+.new_review:hover{
+    text-decoration: underline;
+}
+
+.new_vert{
+    display: grid;
+    place-content: center;
+}
+
+.client_bg .swiper-button-prev{
+    left: 93%;
+}
+
+.qa_slider .swiper-button-next{
+    right: 89%;
+}
+
+.qa_slider .swiper-button-prev,.qa_slider .swiper-button-next{
+    top: 60%
+}
+
+.qa_slider .swiper-button-next{
+    left: 5%
+}
+
+.banner_contact{
+    max-width: 548px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact_img img{
+    width: 100%;
+}
+
+.cantact_sub_heading{
+    font-size: 20px;
+    margin: 24px 0 8px 0;
+    color: #234091;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+.you__card:hover .cantact_sub_heading{
+    color: #fff
+}
+
+.new_con{
+    background-color: #F0F6FF;
+}
+
+/* .for_you_card.you__card:hover{
+    background-color: unset;
+} */
+
+.feature-section .feature-box {
+    display: flex;
+    align-content: stretch;
+}.icon-center .item-single {
+    margin-top: 80px !important;
+    padding-bottom: 0 !important;
+    position: relative;
+    /* margin-bottom: 24px; */
+    padding: 1.5em;
+    background-color: var(--text-white);
+    border-radius: 0.5em;
+    text-align: left;
+    box-shadow: 0 2px 25px 0 rgb(106 99 119 / 10%);
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    transform: translateZ(0);
+    will-change: transform;
+    transition: transform .15s ease-out !important;
+    background-color: #FBF8F0 !important;
+}
+.icon-center .item-single img {
+    top: -115px;
+}
+img.img-fluid-contact {
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+    height: 130px;
+    background-color: #fff;
+    padding: 8px;
+}
+
+.feature-section .item-single .item-content {
+    padding-top: 0;
+    flex: 1 1 auto;
+}
+
+.icon-center .item-content {
+    top: -40px;
+}
+.contact-info {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+.contact-info .item-single .item-content .contact-info h4 {
+    color: #000 !important;
+}
+
+
+.feature-section .bg-hover-none:hover, .bg-hover-none:hover {
+    background-color: transparent !important;
+}
+.feature-section .item-single:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    transition: .6s !important;
+}
+.bg-green {
+    background-color: #EFF6F1 !important;
+}
+
+.bg-blue {
+    background-color: #EEF8FF !important;
+}
 
 
 
@@ -381,10 +507,68 @@ button {
     .new_slider .swiper-wrapper .swiper-slide img{
         width: 100%;
     }
+    .client_slider .swiper-slide img {
+        width: 100%;
+    }
 }
 
+@media (max-width: 1024px){
+    .why-tech-content{
+        padding: 0 30px;
+    }
+    .banner_slider{
+        padding: 25px 0;
+    }
+    .client_slider .swiper-slide{
+        flex-direction: column-reverse;
+    }
+    .new_review{
+        margin-top: 25px;
+        display: inline-block;
+    }
+    .client_bg .swiper-button-prev{
+        left: 84%;
+    }
 
+    .qa_slider .swiper-slide{
+        flex-direction: column-reverse;
+    }
+    .qa_slider .swiper-button-prev,.qa_slider .swiper-button-next{
+        top: 96%;
+    }
+    .qa_slider .swiper-button-next{
+        left: 10%
+    }
+    .new_bn_spacer{
+        margin-left: 12px !important;
+    }
+}
 
+@media (max-width: 767px){
+    .qa_slider .swiper-button-prev,.qa_slider .swiper-button-next{
+        top: 94%;
+    }
+    .qa_slider .swiper-button-next{
+        left: 20%
+    }
+    .client_bg .swiper-button-prev,.client_bg .swiper-button-next{
+        top: 96%
+    }
+    .new_review {
+        margin-top: 0px;
+        display: inline-block;
+    }
+
+    .client_slider .qa_new_slider{
+        margin-bottom: 30px;
+    }
+    .client_bg .swiper-button-prev {
+        left: 80%;
+    }
+    .client_bg .swiper-button-next {
+        left: 92%;
+    }
+}
 
 
 .new_img {

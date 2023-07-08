@@ -25,7 +25,7 @@ button {
 }
 
 .new_banner_sec {
-    padding-top: 90px;
+    /* padding-top: 90px; */
     background: linear-gradient(rgb(35 64 145 / 24%) -13.49%, rgba(71, 178, 126, 0) 81.4%) !important;
 }
 
@@ -348,7 +348,7 @@ button {
 } 
 
 .client_slider .swiper-slide img{
-    width: 100%
+    /* width: 100% */
 }
 
 .client_bg{
@@ -364,10 +364,30 @@ button {
     text-align: left;
 }
 
+.new_review:hover{
+    text-decoration: underline;
+}
 
+.new_vert{
+    display: grid;
+    place-content: center;
+}
 
+.client_bg .swiper-button-prev{
+    left: 93%;
+}
 
+.qa_slider .swiper-button-next{
+    right: 89%;
+}
 
+.qa_slider .swiper-button-prev,.qa_slider .swiper-button-next{
+    top: 60%
+}
+
+.qa_slider .swiper-button-next{
+    left: 5%
+}
 
 
 
@@ -383,6 +403,28 @@ button {
     }
 }
 
+@media (max-width: 1024px){
+    .why-tech-content{
+        padding: 0 30px;
+    }
+    .banner_slider{
+        padding: 25px 0;
+    }
+    .client_slider .swiper-slide{
+        flex-direction: column-reverse;
+    }
+    .new_review{
+        margin-top: 25px;
+        display: inline-block;
+    }
+    .client_bg .swiper-button-prev{
+        left: 84%;
+    }
+
+    .qa_slider .swiper-slide{
+        flex-direction: column-reverse;
+    }
+}
 
 
 
